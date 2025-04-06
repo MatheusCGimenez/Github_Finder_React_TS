@@ -41,7 +41,7 @@ export const useGithubLoader = () => {
   );
 
   const loaderRepoData = useCallback(
-    async (username: string): Promise<IRepo | null> => {
+    async (username: string): Promise<IRepo[] | null> => {
       setLoading(true);
       try {
         const response = await fetch(
@@ -53,8 +53,7 @@ export const useGithubLoader = () => {
           return null;
         }
 
-        const data: IRepo = await response.json();
-        console.log(data);
+        const data: IRepo[] = await response.json();
         return data;
       } catch (error) {
         toast.error(

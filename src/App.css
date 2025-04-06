@@ -1,6 +1,6 @@
 .main_container {
   width: 100dvw;
-  height: 100dvh;
+  min-height: 100dvh;
   /* background-color: var(--bgColor); */
   background: rgb(35, 41, 70);
   background: linear-gradient(

@@ -1,0 +1,85 @@
+.h1 {
+  margin-bottom: 2rem;
+}
+
+.repo_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: auto;
+  overflow: auto;
+  background-color: var(--btnText);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+
+  p {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    text-align: start;
+
+    .icon {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .forks_stars {
+    text-align: center;
+    display: flex;
+    gap: 3rem;
+    margin: auto;
+    font-size: 2rem;
+
+    .stars,
+    .forks {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      button {
+        width: 6.3rem;
+        height: 1.9rem;
+        margin-top: 0.5rem;
+        background-color: cyan;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border: 1px solid white;
+      }
+    }
+  }
+
+  .description {
+    textarea {
+      resize: none;
+      overflow: none;
+      width: 80%;
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 2rem;
+      max-height: 400px;
+      border-radius: 20px;
+      background-color: var(--textColor);
+      border: 1px solid white;
+    }
+  }
+
+  .btn {
+    width: 50%;
+    margin: auto;
+    height: 2.2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--btnBgColor);
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}

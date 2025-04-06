@@ -14,8 +14,8 @@ const Search = ({ loadUser, setUser }: Props) => {
 
   const handleOnClick = () => {
     // remoção de texto em branco
-
     userName.replace(/\s+/g, "");
+    
     loadUser(userName).then((res) => {
       if (!res) return;
 
