@@ -30,7 +30,7 @@ const Repository = () => {
 
       setRepos(formattedRepos);
     });
-  }, [username]);
+  }, []);
 
   if (loading) {
     return <h2>Carregando informações...</h2>;
