@@ -74,7 +74,7 @@ const Repository = () => {
             </button>
             <div className={styles.description}>
               {!repo.description ? null : (
-                <textarea value={repo.description}></textarea>
+                <textarea  defaultValue={repo.description}></textarea>
               )}
             </div>
           </div>

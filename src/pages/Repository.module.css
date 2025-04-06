@@ -65,6 +65,14 @@
       background-color: var(--textColor);
       border: 1px solid white;
     }
+
+    textarea:focus {
+      outline: none;
+    }
+
+    textarea:hover {
+      cursor: default;
+    }
   }
 
   .btn {
