@@ -1,0 +1,13 @@
+.icon {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transition: 0.3s;
+  color: var(--btnBgColor);
+}
